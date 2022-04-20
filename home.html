@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Caveat:wght@500&family=Kaushan+Script&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Caveat:wght@500&family=Grape+Nuts&family=Kaushan+Script&display=swap" rel="stylesheet">
+
+<style>
+    #output{
+        border-top: 10px  ridge teal;
+        width: 600px;
+        height: 300px;
+        border-radius: 50px;
+        background-color: rgba(255, 255, 255, 0.719);
+        opacity: 1 !important;
+        color: black;
+        padding: 15px;
+        font-size: 20px;
+        text-shadow: 2px 2px 5px rgb(130, 213, 213);
+    }
+    body{
+        background-image: url("pexels-pixabay-39284.jpg");
+
+
+        color: rgb(0, 128, 128);
+
+    }
+
+</style>
+    </head>
+    <body>
+
+        
+        <center>
+        <h1 style="background-color: rgba(255, 255, 255, 0.886); text-shadow: 2px 2px 5px black; font-family: 'Grape Nuts', cursive; width: 650px; border-radius: 50px; padding: 15px;">SKETCH IDENTIFICATION APPLICATION</h1>
+        <br><br><br>
+        <div id="output">
+            <p>Sketch Identification is an application in which you can draw a doodle, and the computer will try to match it with the pretrained model called 'DoodleNet' and show the confidence value and name of the doodle drawn on the canvas.</p>
+        <br>
+        <p>DoodleNet is a pretrained model which has sketches classified into 345 categories. Each category has been trained with lots of images. It normally gives accurate results most of the times.</p>
+        </div>
+        <br>
+        <button id="lable" onclick="go()" class="btn btn-info">Lets Go</button>
+        <script src="home.js"></script>
+    </center>
+    </body>
+</html>
